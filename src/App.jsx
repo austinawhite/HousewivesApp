@@ -38,7 +38,7 @@ function App() {
 
           return (
             <div key={name + city} className="cast-member card">
-              <img src={img} alt={name} width="80" />
+              <img src={img} alt={name} width="150" />
               <strong>{name}</strong> ({city})
               <br />
               <button onClick={() => addToRoster(name, city)}>Add to Cast</button>
