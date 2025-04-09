@@ -29,7 +29,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Real Housewives Cast</h1>
+      <h1> Select Your Favorite Housewives! </h1>
       <div id="cast-container" className="cast-container">
         {castList.map(member => {
           const name = member.person.name;
@@ -38,7 +38,7 @@ function App() {
 
           return (
             <div key={name + city} className="cast-member card">
-              <img src={img} alt={name} width="80" />
+              <img src={img} alt={name} width="150" />
               <strong>{name}</strong> ({city})
               <br />
               <button onClick={() => addToRoster(name, city)}>Add to Cast</button>
