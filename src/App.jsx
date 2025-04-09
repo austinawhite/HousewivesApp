@@ -29,7 +29,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Real Housewives Cast</h1>
+      <h1> Select Your Favorite Housewives! </h1>
       <div id="cast-container" className="cast-container">
         {castList.map(member => {
           const name = member.person.name;
